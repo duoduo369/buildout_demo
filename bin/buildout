@@ -1,0 +1,12 @@
+#!/usr/local/opt/python/bin/python2.7
+
+import sys
+sys.path[0:0] = [
+  '/data/apps/buildout_demo/eggs/setuptools-28.0.0-py2.7.egg',
+  '/data/apps/buildout_demo/eggs/zc.buildout-2.5.3-py2.7.egg',
+  ]
+
+import zc.buildout.buildout
+
+if __name__ == '__main__':
+    sys.exit(zc.buildout.buildout.main())
